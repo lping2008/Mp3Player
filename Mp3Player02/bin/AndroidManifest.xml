@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="pl.mp3player"
+    android:versionCode="2"
+    android:versionName="1.1" >
+
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="21" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/mp3_app_logo"
+        android:label="@string/app_name"
+        android:theme="@style/myAppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".Mp3ListActivity"
+            android:label="@string/app_name" />
+        <activity
+            android:name=".LocalMp3ListActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="ISPLAYING" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".PlayerActivity"
+            android:label="音乐播放"
+            android:logo="@drawable/mp3_app_logo"
+            android:parentActivityName="pl.mp3player.MainActivity" >
+            <intent-filter>
+                <action android:name="ISPLAYING" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SoftInfoActivity"
+            android:label="@string/app_name" />
+        <activity
+            android:name=".LauncherActivity"
+            android:theme="@android:style/Theme.Light.NoTitleBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="pl.userinfo.UserInfoActivity"
+            android:label="@string/user_info"
+            android:parentActivityName="pl.mp3player.MainActivity" />
+        <activity
+            android:name="pl.userinfo.UserLoginActivity"
+            android:label="登录"
+            android:parentActivityName="pl.mp3player.MainActivity" />
+        <activity
+            android:name="pl.userinfo.UserRegisterActivity"
+            android:label="用户注册"
+            android:parentActivityName="pl.mp3player.MainActivity" />
+        <activity
+            android:name="pl.mp3player.UpdateActivity"
+            android:label="更新程序"
+            android:parentActivityName="pl.mp3player.MainActivity" />
+
+        <service android:name="pl.service.DownloadService" >
+        </service>
+        <service android:name="pl.service.Mp3PlayerService" >
+        </service>
+    </application>
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" >
+    </uses-permission>
+
+</manifest>

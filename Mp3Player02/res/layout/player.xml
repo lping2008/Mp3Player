@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background1_squirrel"
+    android:orientation="vertical"
+    android:paddingBottom="1dip"
+    android:paddingRight="10dip"
+    android:paddingTop="1dip" >
+
+    <TextView
+        android:id="@+id/playing_stats"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="正在播放" />
+
+    <TextView
+        android:id="@+id/playing_mp3name"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/playing_stats"
+        android:gravity="center_horizontal"
+        android:text="歌名"
+        android:textColor="#b23aee" />
+    
+    <TextView
+        android:id="@+id/lrcText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_weight="1"
+        android:text="歌词点播放后显示" />
+
+    <LinearLayout
+        android:id="@+id/control_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/begin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/begin" />
+
+        <ImageButton
+            android:id="@+id/pause"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/pause" />
+
+        <ImageButton
+            android:id="@+id/stop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/stop" />
+    </LinearLayout>
+</RelativeLayout>

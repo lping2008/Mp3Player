@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0F3F6"
+    android:orientation="vertical" >
+
+    <LinearLayout style="@style/wrap_layout" >
+
+        <!-- 上圆角 -->
+
+        <LinearLayout 
+            android:id="@+id/user_head_img"
+            style="@style/top_layout" >
+
+            <TextView
+                style="@style/usertext"
+                android:text="头像" />
+
+            <ImageView style="@style/img_arrow" />
+        </LinearLayout>
+
+        <!-- 分割线 -->
+
+        <View style="@style/bg_line" />
+        <!-- 无圆角 -->
+
+        <LinearLayout style="@style/mid_layout" >
+
+            <TextView
+                style="@style/usertext"
+                android:text="用户名" />
+
+            <TextView
+                android:id="@+id/user_name_info"
+                style="@style/userinfo"
+                android:text="未登录" />
+
+
+            <ImageView style="@style/img_arrow" />
+        </LinearLayout>
+
+        <!-- 分割线 -->
+
+        <View style="@style/bg_line" />
+        <!-- 无圆角 -->
+
+        <LinearLayout style="@style/mid_layout" >
+
+            <TextView
+                style="@style/usertext"
+                android:text="出生年月" />
+
+            <TextView
+                android:id="@+id/user_birth"
+                style="@style/userinfo"
+                android:text="未设置" />
+
+            <ImageView style="@style/img_arrow" />
+        </LinearLayout>
+
+        <View style="@style/bg_line" />
+        <!-- 无圆角 -->
+
+        <LinearLayout style="@style/mid_layout" >
+
+            <TextView
+                style="@style/usertext"
+                android:text="性别" />
+
+            <TextView
+                android:id="@+id/user_sex"
+                style="@style/userinfo"
+                android:text="未设置" />
+
+            <ImageView style="@style/img_arrow" />
+        </LinearLayout>
+
+        <View style="@style/bg_line" />
+        <!-- 下圆角 -->
+
+        <LinearLayout style="@style/bottom_layout" >
+
+            <TextView
+                style="@style/usertext"
+                android:text="邮箱" />
+
+            <TextView
+                android:id="@+id/user_email"
+                style="@style/userinfo"
+                android:text="未设置" />
+
+            <ImageView style="@style/img_arrow" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- 全圆角 -->
+
+    <LinearLayout style="@style/wrap_layout" >
+
+        <LinearLayout style="@style/single_layout" >
+
+            <TextView
+                style="@style/usertext"
+                android:text="修改密码" />
+
+            <ImageView style="@style/img_arrow" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- 全圆角 -->
+
+    <LinearLayout style="@style/wrap_layout" >
+
+        <LinearLayout android:id="@+id/exitlogin"
+            style="@style/single_layout" >
+
+            <TextView
+                style="@style/usertext"
+                android:text="退出账号" />
+
+            <ImageView style="@style/img_arrow" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

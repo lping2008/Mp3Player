@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal"
+    android:paddingBottom="8dip"
+    android:paddingLeft="1dip"
+    android:paddingRight="1dip"
+    android:paddingTop="2dip" >
+
+    <TextView
+        android:id="@+id/mp3list_id"
+        style="@style/mp3_id_img" 
+        />
+
+    <TextView
+        android:id="@+id/mp3_name"
+        style="@style/mp3_list_text_name"
+        android:layout_weight="0.8"
+        />
+
+    <TextView
+        android:id="@+id/mp3_size"
+        style="@style/mp3_list_text_size"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="0.2"
+        android:gravity="center_horizontal" />
+    
+	<RelativeLayout 
+	    android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    >
+    <ImageView
+        android:id="@+id/download_img"
+        style="@style/mp3_id_img"
+        android:contentDescription="xiazai"
+        android:src="@drawable/download_img" />
+    
+    <TextView android:id="@+id/percent_view"
+        android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:layout_gravity="center"
+    	android:visibility="invisible"
+        />
+	    
+	</RelativeLayout>
+
+</LinearLayout>

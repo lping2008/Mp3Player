@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#bba0ff" >
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="90dp"
+        android:text="用户注册"
+        android:textColor="#000"
+        android:textSize="23sp"
+        android:typeface="monospace" />
+
+    <RelativeLayout
+        android:id="@+id/rl_userName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_title"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="40dp"
+        android:background="#fff" >
+
+        <EditText
+            android:id="@+id/et_userName_inregister"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:background="@null"
+            android:ems="19"
+            android:hint="请输入用户名"
+            android:textColorHint="#88dd00"
+            android:textCursorDrawable="@null"
+            android:textSize="15sp" />
+    </RelativeLayout>
+    
+<RelativeLayout
+        android:id="@+id/rl_userPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl_userName"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="1dp"
+        android:background="#fff" >
+
+        <EditText
+            android:id="@+id/et_password_inregister"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:background="@null"
+            android:drawablePadding="5dp"
+            android:ems="19"
+            android:hint="密码"
+            android:inputType="textPassword"
+            android:textSize="15sp" />
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/rl_userPassword_ag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl_userPassword"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="1dp"
+        android:background="#fff" >
+
+        <EditText
+            android:id="@+id/et_password_ag_inregister"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="2dp"
+            android:background="@null"
+            android:drawablePadding="5dp"
+            android:ems="19"
+            android:hint="请确认密码"
+            android:inputType="textPassword"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+    
+
+    <Button
+        android:id="@+id/btn_register_inregister"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl_userPassword_ag"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="#4876ff"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="注册"
+        android:textColor="#fff"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/btn_login_inregister"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_register_inregister"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="#4876ff"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="已有账户"
+        android:textColor="#fff"
+        android:textSize="18sp" />
+
+</RelativeLayout>
